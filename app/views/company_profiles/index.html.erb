@@ -1,0 +1,16 @@
+<h1>Listing company profiles</h1>
+
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Description</th>
+    </tr>
+    
+    <% @company_profiles.each do |profile| %>
+        <tr>
+            <td><%= profile.name %></td>
+            <td><%= profile.description %></td>
+            <td><%= link_to 'Show', company_profile_path(profile) %></td>
+        </tr>
+    <% end %>
+</table>
