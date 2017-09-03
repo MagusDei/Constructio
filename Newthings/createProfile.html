@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--definitions-->
+  <meta charset="utf-8" />
+
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="expires" content="-1">
+  <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+
+  <!--css styles-->
+  <link rel="stylesheet" type="text/css" href="css/createProfile.css">
+
+  <!--fonts-->
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Droid Sans' rel='stylesheet'>
+
+  <!--scripts-->
+  <script type="text/javascript" src=js/app.js></script>
+</head>
+
+<body>
+  <div class="topnav">
+    <h1><a href="index.html">construct.io</a></h1>
+    <button id="createProfile" type="button" class="registerBtn"> <a href="createProfile.html">LUO PROFIILI</a></button>
+    <button id="login" type="button" onclick="#" class="loginBtn">KIRJAUDU SISÄÄN</button>
+
+    <!-- Button to open the modal login form -->
+    <button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'" 
+    class="close" title="Close Modal">&times;</span>
+
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="#">
+
+        <div class="container">
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <input type="checkbox" checked="checked"> Remember me
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+
+    <!--<form>
+      <div class="container">
+        <label>Luo profiili</label>
+      </div>
+
+      <div class="container">
+        <label><b>Etunimi</b></label>
+        <input type="text" placeholder="Enter surname" name="surname" required>
+
+        <label><b>Sukunimi</b></label>
+        <input type="text" placeholder="Enter name" name="name" required>
+
+        <label><b>Käyttäjänimi</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label><b>Salasana</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <label><b>Salasana uudestaan</b></label>
+        <input type="password" placeholder="Enter Password again" name="pswagain" required>
+
+        <button type="submit" class="createbtn" >Luo</button>
+        <input type="checkbox" checked="checked"> Muista minut
+      </div>
+
+      <div class="container">
+        <button type="button" class="cancelbtn">Peru</button>
+        <span class="psw">Unohtanut <a href="#">salasana?</a></span>
+      </div>
+    </form>-->
+
+  </div>
+</body>
+</html>

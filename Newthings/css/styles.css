@@ -1,0 +1,188 @@
+html, body { 
+  margin: 0; padding: 0; border: 0; 
+  font-family: Comfortaa;
+  font-size: 12pt;
+  height: 100%; 
+  width: 100%;
+  overflow: hidden;
+  user-select: none;
+  background-color: #40b6f2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a[href="index.html"]:visited {
+  color: #40b6f2;
+}
+
+input, textarea, [contenteditable] {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+h1 {
+  font-size: 1.5em;
+  color: black;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.topnav {
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 60px;
+  background-color: White;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.mainarea {
+  position: relative;
+  top: 45px;
+  margin-bottom: 50px;
+}
+
+.loginBtn {
+  right: 75px;
+  position: fixed;
+  top: 15px;
+  border: 3px solid #ccc;
+  border-radius: 2px;
+  font-size: 12px;
+  font-family: Comfortaa;
+  background-color: white;
+} 
+
+.registerBtn {
+  right: 250px; 
+  position: fixed;
+  top: 15px;
+  border: 3px solid #ccc;
+  border-radius: 2px;
+  font-size: 12px;
+  font-family: Comfortaa;
+  background-color: white;
+}
+
+.card {
+  background: #addef2;
+  border-radius: 2px;
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  margin: 2rem;
+  position: relative;
+}
+
+.card-1 {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+input[type=text], input[type=password] {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 2px;
+    border: none;
+    font-size: 32px;
+    font-family: Droid Sans;
+    color: white;
+    background-color: #3b5998;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 24px 40px 24px 80px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    outline: none;
+}
+
+input[type=text]:hover, input[type=password]:hover {
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+input[name="uname"], input[name="psw"], input[name="checked"] {
+  display: block;
+    width: 80%;
+    margin: auto;
+    border-radius: 2px;
+    border: none;
+    font-size: 12px;
+    font-family: Droid Sans;
+    color: white;
+    background-color: #3b5998;
+    background-position: 5px 5px;
+    background-repeat: no-repeat;
+    padding: 5px 5px 5px 5px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}

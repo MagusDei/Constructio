@@ -1,16 +1,21 @@
-<h1>Listing company profiles</h1>
-
-<table>
-    <tr>
-        <th>Name</th>
-        <th>Description</th>
-    </tr>
-    
-    <% @company_profiles.each do |profile| %>
-        <tr>
-            <td><%= profile.name %></td>
-            <td><%= profile.description %></td>
-            <td><%= link_to 'Show', company_profile_path(profile) %></td>
-        </tr>
+<div class="mainarea">
+    <%= form_for(:search, url: company_profiles_path, method: :get) do |f| %>
+        <p>
+        <%= f.text_field :searchtext, class: 'searchinput', placeholder: 'Tee uusi haku...' %>
+        </p>
+        
+        <%= f.submit "Log in", class: 'btn btn-primary', style: 'visibility: hidden;' %>
     <% end %>
-</table>
+    <p class="hakusanatulokset">Tulokset haulle:<br><strong><%= @search_text %></strong></p>
+    <div style="text-align: center">
+      <% @company_profiles.each do |profile| %>
+          <div class="hakutulos">
+            <p class="hakutulosOtsikko"><%= profile.name %></p>
+            <p class="hakutulosKuvaus"><%= profile.description %></p>
+          </div>
+      <% end %>
+    </div>
+</div>
+<div class="footer">
+    <p>Ota yhteyttä: hello@construct.io</p>
+</div>

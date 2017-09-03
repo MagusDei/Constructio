@@ -1,0 +1,186 @@
+body {
+  background-color: #00bcd6;
+}
+h1 {
+  font-size: 1.5em;
+  font-family: Comfortaa;
+  color: #00bcd6;
+  font-weight: bold;
+  margin-left: 20px;
+}
+h2 {
+  font-size: 1.5em;
+  font-family: Comfortaa;
+  color: white;
+  text-align: left;
+}
+h3 {
+  font-size: 1.2em;
+  font-family: Droid Sans;
+  color: white;
+  text-align: left;
+}
+p {
+  font-family: Droid Sans;
+  text-align: center;
+}
+.topnav {
+  position: fixed;
+  display: block;
+  z-index: 2;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  width: 100vw;
+  height: 60px;
+  background-color: White;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  margin-left: 0px;
+}
+.mainarea {
+  position: relative;
+  top: 45px;
+  bottom: 300px;
+  margin-bottom: 50px;
+}
+.siteDescription {
+  font-size: 1.5em;
+  font-family: Comfortaa;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+.footer{
+  position: absolute;
+  display: block;
+  left: 0px;
+  width: 100%;
+  margin-top: 50px;
+  height: 50px;
+  background-color: white;
+  color: #00bcd6;
+}
+.loginBtn{
+  position: fixed;
+  z-index: 3;
+  top: 15px;
+  right: 50px;
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+  font-family: Comfortaa;
+  color: white;
+  background-color: #00bcd6;
+  padding: 5px;
+}
+.registerBtn{
+  position: fixed;
+  z-index: 3;
+  top: 15px;
+  right: 200px;
+  border: none;
+  border-radius: 2px;
+  font-size: 12px;
+  font-family: Comfortaa;
+  color: white;
+  background-color: #00bcd6;
+  padding: 5px;
+}
+.loginBtn:focus{
+  outline:none;
+}
+.card {
+  position: relative;
+  display: inline-block;
+  height: 200px;
+  margin: 4rem;
+  border-radius: 2px;
+  width: 200px;
+  padding: 20px;
+}
+/*
+.card {
+  display: inline-block;
+  background: white;
+  border-radius: 2px;
+  height: 200px;
+  margin: 4rem;
+  border-radius: 2px;
+  position: relative;
+  width: 200px;
+}
+.card-1 {
+  box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}*/
+.card-1 {
+  box-shadow: 0 0px 0px rgba(0,0,0,0.12), 0 0px 0px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.card-1:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.hakusanatulokset {
+  font-size: 2.5em;
+  font-family: Comfortaa;
+  color: white;
+  text-align: left;
+  padding-left: 140px;
+}
+.hakutulos {
+  position: relative;
+  display: block;
+  margin-left: 4rem;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  width: 80%;
+  padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 80px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.hakutulos:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.hakutulosOtsikko{
+  font-size: 1.5em;
+  font-family: Comfortaa;
+  color: white;
+  text-align: left;
+  margin-bottom: 5px;
+}
+.hakutulosKuvaus{
+  font-size: 1.2em;
+  font-family: Droid Sans;
+  color: white;
+  text-align: left;
+  margin-top: 5px;
+}
+
+input[type=text] {
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 2px;
+    border: none;
+    font-size: 32px;
+    font-family: Droid Sans;
+    color: #00bcd6;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 24px 40px 24px 80px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12), 0 2px 4px rgba(0,0,0,0.24);
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+input[type=text]:hover {
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}

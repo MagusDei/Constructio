@@ -1,0 +1,12 @@
+<% if @company_profile %>
+<% if @company_profile.errors.any? %>
+    <div id="error_explanation">
+        The form contains <%= pluralize(@company_profile.errors.count, "error") %>.
+    </div>
+    <ul>
+        <% @company_profile.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+        <% end %>
+    </ul>
+<% end %>
+<% end %>

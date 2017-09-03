@@ -1,4 +1,6 @@
 <%= form_for :company_profile, url: company_profiles_path do |f| %>
+    <%= render "shared/error_messages" %>
+
     <p>
         <%= f.label :name %><br/>
         <%= f.text_field :name %>
@@ -7,6 +9,16 @@
     <p>
         <%= f.label :description %><br/>
         <%= f.text_area :description %>
+    </p>
+    
+    <p>
+        <%= f.label :password %><br/>
+        <%= f.password_field :password %>
+    </p>
+    
+    <p>
+        <%= f.label :password_confirmation %><br/>
+        <%= f.password_field :password_confirmation %>
     </p>
     
     <p>

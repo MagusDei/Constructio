@@ -42,7 +42,7 @@ class CompanyProfileTest < ActiveSupport::TestCase
   end
   
   test "Password should be at least 6 letters" do
-    @company_profile = @company_profile.password_confirmation = "12345"
+    @company_profile.password = @company_profile.password_confirmation = "12345"
     assert_not @company_profile.valid?
   end
   
